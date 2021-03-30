@@ -18,7 +18,9 @@ datasketch[redis]
 
 ## Datasets 
 The OpenEA dataset is provided by [OpenEA](https://github.com/nju-websoft/OpenEA)
+
 Our DBP1M dataset is avaliable at [Google Drive](https://drive.google.com/file/d/15jeGD-6pVGlqI5jCn7KJfGIER6AeoQ-L/view?usp=sharing)
+
 First download and unzip dataset files, place them to the project root folder:
 
     unzip OpenEA_dataset_v1.1.zip
