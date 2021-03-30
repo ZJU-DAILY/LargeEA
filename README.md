@@ -67,3 +67,19 @@ To run RREA model:
 ### Channel Fusion and Eval
 
     python main.py --phase 4  --dataset large --lang fr 
+
+
+## Acknowledgements
+
+We use the code of 
+[MRAEA](https://github.com/MaoXinn/MRAEA),
+[RREA](https://github.com/MaoXinn/RREA), 
+[GCN-Align](https://github.com/1049451037/GCN-Align),
+[DGMC](https://github.com/rusty1s/deep-graph-matching-consensus),
+[AttrGNN](https://github.com/thunlp/explore-and-evaluate),
+[OpenEA](https://github.com/nju-websoft/OpenEA),
+[EAKit](https://github.com/THU-KEG/EAKit),
+[SimAlign](https://github.com/cisnlp/simalign).
+
+
+We also provide the modified version of OpenEA in order to run experiments on RTX3090 GPU:[OpenEA-TF2](https://github.com/joker-xii/OpenEA-TF2)
