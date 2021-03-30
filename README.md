@@ -15,6 +15,9 @@ transformers
 
 datasketch[redis]
 
+...
+
+A full list of required packages is located in ``src/requirements.txt``
 
 ## Datasets 
 The OpenEA dataset is provided by [OpenEA](https://github.com/nju-websoft/OpenEA)
