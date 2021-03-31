@@ -1,4 +1,6 @@
-# Aligning Entities between Large-scale Knowledge Graphs [Scalable Data Science]
+# LargeEA
+
+Source code for LargeEA: Aligning Entities for Large-scale Knowledge Graphs 
 
 If there is any problem with reproduction, please create an issue in [The GitHub repo page](https://github.com/ZJU-DBL/LargeEA)
 
