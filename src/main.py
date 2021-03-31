@@ -62,11 +62,12 @@ def run_batched_ea(data: EAData, src_split, trg_split, topk, args):
     print('read data complete')
 
     torch.backends.cudnn.deterministic = True
-    # random.seed(args.seed)
-    # np.random.seed(args.seed)
-    # torch.manual_seed(args.seed)
-    # if args.cuda and torch.cuda.is_available():
-    #     torch.cuda.manual_seed(args.seed)
+    random.seed(args.seed)
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
+    if args.cuda and torch.cuda.is_available():
+        torch.cuda.manual_seed(args.seed)
+    set_seed(args.seed)
     device = torch.device("cuda" if args.cuda and torch.cuda.is_available() else "cpu")
     curr_sim = None
     for batch in tqdm(batch_sampler(data, src_split, trg_split, topk, random=args.random_split, backbone=args.model,
@@ -327,10 +328,10 @@ if __name__ == '__main__':
         save_sim_phase(sim, phase, data, lang, which, is_train)
         update_time_logs('save_sim')
         del candidates
-        try:
-            result = sparse_top_k(sim, d.ill(d.test))
-        except:
-            result = sparse_acc(sim, d.ill(d.test))
+        # try:
+        #     result = sparse_top_k(sim, d.ill(d.test))
+        # except:
+        result = sparse_acc(sim, d.ill(d.test))
         update_time_logs('get_hits_mrr')
         log_information(data, lang, phase, prefix=args.save_prefix, result=result)
 

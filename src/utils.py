@@ -329,7 +329,7 @@ def set_seed(seed):
         import numpy
         import torch
         import tensorflow
-        tensorflow.random.set_random_seed(seed)
+        tensorflow.compat.v1.random.set_random_seed(seed)
         numpy.random.seed(seed)
         random.seed(seed)
         torch.random.manual_seed(seed)

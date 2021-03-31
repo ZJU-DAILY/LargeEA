@@ -1,6 +1,6 @@
-# LargeEA : Aligning Entities between Large-scale Knowledge Graphs [Scalable Data Science]
+# Aligning Entities between Large-scale Knowledge Graphs [Scalable Data Science]
 
-If there is any problem on reproduction, please create an issue in [The GitHub repo page](https://github.com/ZJU-DBL/LargeEA)
+If there is any problem with reproduction, please create an issue in [The GitHub repo page](https://github.com/ZJU-DBL/LargeEA)
 
 
 ## Requirements
@@ -20,9 +20,9 @@ datasketch[redis]
 A full list of required packages is located in ``src/requirements.txt``
 
 ## Datasets 
-The OpenEA dataset is provided by [OpenEA](https://github.com/nju-websoft/OpenEA)
+The IDS benchmark is provided by [OpenEA](https://github.com/nju-websoft/OpenEA)
 
-Our DBP1M dataset is avaliable at [Google Drive](https://drive.google.com/file/d/15jeGD-6pVGlqI5jCn7KJfGIER6AeoQ-L/view?usp=sharing)
+Our newly proposed benchmark DBP1M is available at [Google Drive](https://drive.google.com/file/d/15jeGD-6pVGlqI5jCn7KJfGIER6AeoQ-L/view?usp=sharing)
 
 First download and unzip dataset files, place them to the project root folder:
 
@@ -30,12 +30,8 @@ First download and unzip dataset files, place them to the project root folder:
     unzip mkdata.zip
 
 
-The __dataset__ (small for IDS15K, medium for IDS100K, large for DBP1M) and  __lang__ (fr or de)parameter controls which benchmark to use.
-For example, in src folder
-
-    python main.py --dataset small --lang de
-
-runs on OpenEA EN_FR_15K_V1 dataset.
+The __dataset__ (small for IDS15K, medium for IDS100K, large for DBP1M) and  __lang__ (fr or de) parameter controls which benchmark to use.
+For example, in the ``src`` folder, setting dataset to small and lang to fr will run on OpenEA EN_FR_15K_V1 dataset.
 
 ## Run
 
@@ -74,7 +70,7 @@ To run RREA model:
 
 ## Acknowledgements
 
-We use the code of 
+We use the codes of 
 [MRAEA](https://github.com/MaoXinn/MRAEA),
 [RREA](https://github.com/MaoXinn/RREA), 
 [GCN-Align](https://github.com/1049451037/GCN-Align),
