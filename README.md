@@ -35,6 +35,8 @@ For example, in the ``src`` folder, setting dataset to small and lang to fr will
 
 ## Run
 
+Take __DBP1M(EN-FR)__ as an example:
+
 Make sure the folder for results is created:
 
     cd src/
