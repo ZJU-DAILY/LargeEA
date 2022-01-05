@@ -70,6 +70,27 @@ To run RREA model:
 ### Channel Fusion and Eval
 
     python main.py --phase 4  --dataset large --lang fr 
+    
+    
+
+## Citation
+
+Reference to cite when you use LargeEA in a research paper:
+
+
+    @article{largeEA,
+      author    = {Congcong Ge and
+                   Xiaoze Liu and
+                   Lu Chen and
+                   Baihua Zheng and
+                   Yunjun Gao},
+      title     = {LargeEA: Aligning Entities for Large-scale Knowledge Graphs},
+      journal   = {{PVLDB}},
+      volume    = {15},
+      number    = {2},
+      pages     = {237--245},
+      year      = {2022}
+    }
 
 
 ## Acknowledgements
